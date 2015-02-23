@@ -1,5 +1,6 @@
 Brian Westfall | Front-End Web Developer
 
 
-# hello-world2
-Depository on GitHub
+ticker
+
+Simple ticker using html, css and jQuery
