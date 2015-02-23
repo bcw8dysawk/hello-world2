@@ -1,0 +1,85 @@
+
+<!-- Cool simple jQuery ticker -->
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>jQuery | Ticker</title>
+
+    <!-- BEGIN TICKER -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+    
+        <script>
+$(function()
+{
+    var ticker = function()
+    {
+        setTimeout(function(){
+            $('#ticker li:first').animate( {marginTop: '-30px'}, 800, function()
+            {
+                $(this).detach().appendTo('ul#ticker').removeAttr('style');
+            });
+            ticker();
+        }, 4000);
+    };
+    ticker();
+});
+    </script>
+
+    <style type="text/css">
+        .tablebg {
+            background: #fbeb9e;
+            height: 40px;
+            width: 1007px;
+        }
+
+        #ticker {
+            height: 30px;
+            width: 1007px;
+            overflow: hidden;
+            list-style: none;
+            font-size: 20px;
+            position: relative;
+            top: 10px;
+            left: -37px;
+            margin-left: 0px;
+        }
+
+            #ticker li {
+                height: 30px;
+                width: 1007px;
+                font: 16px Verdana,Helvetica,Arial;
+                text-align: left;
+            }
+    </style>
+
+
+
+
+</head>
+<body>
+    <div class="tablebg">
+        <ul id="ticker">
+            <li>
+                <span style="color:#be0505">BREAKING NEWS</span> &nbsp;|&nbsp;
+                Nadal shocked again at Wimbledon; Federer advances
+            </li>
+
+            <li>
+                <span style="color:#be0505">BREAKING NEWS</span> &nbsp;|&nbsp;
+                Line 2
+            </li>
+
+            <li>
+                <span style="color:#be0505">BREAKING NEWS</span> &nbsp;|&nbsp;
+                Line 3 ...
+            </li>
+        </ul>
+    </div>
+    <!-- END TICKER -->
+
+
+
+</body>
+</html>
