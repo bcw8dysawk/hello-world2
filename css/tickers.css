@@ -1,0 +1,24 @@
+        .tablebg {
+            background: #fbeb9e;
+            height: 40px;
+            width: 1007px;
+        }
+
+        #ticker {
+            height: 30px;
+            width: 1007px;
+            overflow: hidden;
+            list-style: none;
+            font-size: 20px;
+            position: relative;
+            top: 10px;
+            left: -37px;
+            margin-left: 0px;
+        }
+
+            #ticker li {
+                height: 30px;
+                width: 1007px;
+                font: 16px Verdana,Helvetica,Arial;
+                text-align: left;
+            }
